@@ -136,7 +136,7 @@ const DEFAULT_CONTENT = {
   }
 };
 
-const DEFAULT_PROFILE_IMAGE = "/src/assets/profile.jpg";
+const DEFAULT_PROFILE_IMAGE = "/src/assets/이재현_증명사진.jpg";
 
 const STORIES_BG = [
   { bg: 'bg-blue-50', text: 'text-blue-900' },
