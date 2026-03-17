@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Phone, Mail, Instagram, Facebook, Share2, Lock, ChevronDown, Briefcase, Handshake, Landmark, LogOut, Trash2, MessageSquare, Send, X, Upload, Image as ImageIcon, Edit3 } from 'lucide-react';
+import profileImg from './assets/이재현_증명사진.jpg';
 
 const ADMIN_PASSWORD = '87511483';
 const BRAND_BLUE = '#004EA2'; // 더불어민주당 상징색
@@ -136,7 +137,7 @@ const DEFAULT_CONTENT = {
   }
 };
 
-const DEFAULT_PROFILE_IMAGE = "/src/assets/이재현_증명사진.jpg";
+const DEFAULT_PROFILE_IMAGE = profileImg;
 
 const STORIES_BG = [
   { bg: 'bg-blue-50', text: 'text-blue-900' },
