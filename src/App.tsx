@@ -22,46 +22,121 @@ type GalleryItem = {
 
 const DEFAULT_CONTENT = {
   hero: {
-    title: '"청년이 남는 도시,\n순천의 구조를 바꾸겠습니다."',
-    subtitle: '근면과 성실, 신뢰와 겸손으로\n시민과 함께하는 28살 청년 정치인',
-    name: '이재현',
-    role: '더불어민주당 순천시의원 비례대표 출마예정자',
-    bottomText: '근면과 성실, 신뢰와 겸손으로\n시민·당원과 함께하는 28살 청년 정치인이 되겠습니다.\n끊임없는 배움과 열정으로\n지역과 더불어민주당의 미래를 위해 헌신하겠습니다.'
+    title: "이 재 현",
+    subtitle: "준비된 청년, 일하는 정치",
+    name: "이재현",
+    role: "더불어민주당 순천시의원 비례대표 출마예정자",
+    bottomText: "근면과 성실, 신뢰와 겸손으로\n시민·당원과 함께하는 27살 청년 정치인이 되겠습니다.\n끊임없는 배움과 열정으로\n지역과 더불어민주당의 미래를 위해 헌신하겠습니다."
   },
   stories: [
-    { tag: '#순천_토박이', desc: '순천에서 나고 자라 순천대에서 공부한 청년. 통계가 아닌 삶으로 순천을 겪었습니다.' },
-    { tag: '#행동하는_양심', desc: '고2 시절 촛불 대자보부터 12.3 비상계엄 규탄까지. 불의를 외면하지 않고 광장과 현장을 지켰습니다.' },
-    { tag: '#준비된_일꾼', desc: '대선 청년외교특보부터 국회 인턴 비서관까지. 당과 국회, 지역의 현장을 모두 경험한 흔치 않은 청년입니다.' }
+    {
+      tag: "#준비된_일꾼",
+      desc: "대선 청년외교특보, 더불어민주당 순천(갑) 대학생위원회 부위원장, 국회 인턴 비서관으로 이어지는 경험을 통해 당 조직과 정치 현장을 직접 경험했습니다.\n당, 지역, 국회 세 정치 현장을 모두 경험한 청년은 흔하지 않습니다. 저는 그 경험을 바탕으로 시민과 당을 위해 더 큰 역할로 헌신하는 27살 청년 정치인이 되고자 합니다."
+    },
+    {
+      tag: "#행동하는_양심",
+      desc: "고등학교 2학년 시절, 박근혜 정부의 국정농단 사태를 규탄하는 시국 대자보를 작성하여 광장으로 들고 나가 싸우고 또 싸웠습니다. 그리고 12.3 내란 규탄까지. 불의를 외면하지 않고, 돌멩이라도 던져 싸울 수 있는 용기와 정의감을 가진 부끄럽지 않은 사람이 되고 싶었습니다."
+    },
+    {
+      tag: "#순천_토박이",
+      desc: "순천에서 나고 자라 순천에서 공부하고 대학까지 졸업한 청년. 통계가 아닌 삶으로 순천을 느꼈습니다. 순천의 특성과 지역 문제를 잘 이해하고 있어, 순천 시민의 목소리를 제대로 반영할 수 있는 능력을 가지고 있습니다."
+    }
   ],
   vision: {
-    quote: '"민원 해결사를 넘어, 순천의 내일을 기획하는 \'정책 입안자\'가 되겠습니다."',
-    desc: '특정 동네의 문제에 얽매이지 않고, 순천시 전체의 문제(청년 유출, 일자리, 주거)를 구조적으로 해결하기 위해 비례대표에 도전합니다.'
+    quote: "\"민원 해결사를 넘어, 순천의 내일을 기획하는 '정책 입안자'가 되겠습니다.\"",
+    desc: "특정 동네의 문제에 얽매이지 않고, 순천시 전체의 문제(청년 유출, 일자리, 주거)를 구조적으로 해결하기 위해 비례대표에 도전합니다."
   },
   promises: [
-    { title: '미래 산업과 청년 일자리 기반 강화', desc: '미래 산업이 지역 청년 일자리로 연결되는 구조 마련' },
-    { title: '청년 정책 참여 보장 조례 추진', desc: '청년이 설계 단계부터 참여하는 제도적 기반 구축' },
-    { title: '열린 의정 및 당의 가치 실현', desc: '어려운 조례를 시민의 언어로 번역하고, 더불어민주당의 가치 실현' }
+    {
+      title: "청년이 일할 수 있는 도시, 순천",
+      desc: "문화콘텐츠, 우주항공·방산, 산업그린바이오 등 순천의 미래 산업 정책이 실제 지역 청년들의 일자리로 연결될 수 있도록 정책을 점검하고 제도적으로 뒷받침하겠습니다."
+    },
+    {
+      title: "청년과 함께 만드는 정책",
+      desc: "청년들이 정책 과정에 보다 적극적으로 참여할 수 있도록 제도적 기반을 보완하는 조례를 추진하겠습니다. 청년을 위한 정책을 청년과 함께 만드는 구조를 만드는 것이 출발점입니다."
+    },
+    {
+      title: "열린 의정 및 당의 가치 실현",
+      desc: "시의회 조례와 예산 심의 내용을 시민이 이해할 수 있는 언어로 공개하고, 지역위원회와 함께 현장에서 더불어민주당의 가치가 실현될 수 있도록 하겠습니다."
+    }
   ],
   profileHighlights: [
-    { current: true, title: '더불어민주당 순천(갑) 대학생위원회 부위원장' },
-    { current: false, title: '21대 국회의원 인턴 비서관' },
-    { current: false, title: '20대 대선 이재명 후보 청년외교특보' }
+    {
+      current: true,
+      title: "더불어민주당 순천(갑) 대학생위원회 부위원장"
+    },
+    {
+      current: true,
+      title: "민주평화통일자문회의 자문위원 [의장: 대통령]"
+    },
+    {
+      current: false,
+      title: "21대 국회의원 인턴 비서관"
+    },
+    {
+      current: false,
+      title: "더불어민주당 제21대 대통령선거 이재명 후보 순천시 특보"
+    },
+    {
+      current: false,
+      title: "더불어민주당 제20대 대통령선거 이재명 후보 청년외교특보"
+    },
+    {
+      current: false,
+      title: "국립순천대학교 제38대 총학생회 정책부장"
+    },
+    {
+      current: false,
+      title: "순천시청소년참여위원회 위원장"
+    },
+    {
+      current: false,
+      title: "EBS 청소년시청자위원회 위원"
+    },
+    {
+      current: false,
+      title: "대한민국학생기자단 전남권 대표 기자"
+    }
   ],
   profileDetails: [
-    { category: '학력', items: ['국립순천대학교 컴퓨터교육과 졸업 (2026)'] },
-    { category: '수상', items: ['더불어민주당 당대표 1급 포상 (2025)', '전라남도 교육감 표창 (2025)', '전라남도지사 표창 (2016)', '순천시장 표창 (2012)', '국회의원 표창 (2017)'] },
-    { category: '기타', items: ['자치입법전문가 1급 취득 (2024)', '순천시청소년참여위원회 위원장 (2015-2017)'] }
+    {
+      category: "학력",
+      items: [
+        "국립순천대학교 컴퓨터교육과 졸업 (2026)",
+        "순천제일고등학교 졸업 (2018)",
+        "순천팔마중학교 졸업 (2015)",
+        "순천율산초등학교 졸업 (2012)"
+      ]
+    },
+    {
+      category: "수상",
+      items: [
+        "더불어민주당 당대표 1급 포상 (제21대 대통령선거 승리 기여, 2022)",
+        "전라남도 교육감 표창 (지역사회 발전 및 청년 모범, 2023)",
+        "전라남도지사 표창 (청소년 권익 증진, 2016)",
+        "순천시장 표창 (2013순천만국제정원박람회 홍보 기여, 2012)",
+        "국회의원 표창 (청소년 언론의식 함양 기여, 2017)"
+      ]
+    },
+    {
+      category: "기타",
+      items: [
+        "자치입법전문가 1급 취득 (제윤의정, 2024)"
+      ]
+    }
   ],
   footer: {
-    quote: '"서생의 문제의식과 상인의 현실감각을 겸비한\n청년이자, 쓰임 받는 큰 정치인이 되겠습니다."'
+    quote: "\"서생의 문제의식과 상인의 현실감각을 겸비한\n청년이자, 쓰임 받는 큰 정치인이 되겠습니다.\""
   },
   contact: {
-    phone: '010-6429-0847',
-    message: '010-6429-0847',
-    instagram: '',
-    facebook: ''
+    phone: "010-6429-0847",
+    message: "010-6429-0847",
+    instagram: "https://www.instagram.com/lucasneal_?igsh=MWkyYWJhbzBpcnM5cg%3D%3D&utm_source=qr",
+    facebook: "https://www.facebook.com/share/1CFRA6i268/?mibextid=wwXIfr"
   }
 };
+
+const DEFAULT_PROFILE_IMAGE = "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0";
 
 const STORIES_BG = [
   { bg: 'bg-blue-50', text: 'text-blue-900' },
@@ -72,24 +147,69 @@ const STORIES_BG = [
 const GALLERY_TABS = [
   { id: 'protest', label: '불의에 맞선 현장' },
   { id: 'politics', label: '정치를 배운 국회와 당' },
-  { id: 'citizens', label: '순천 시민과 함께' }
+  { id: 'citizens', label: '열정 많은 순천 청년 이재현' }
 ];
 
 const DEFAULT_GALLERY_DATA: Record<string, GalleryItem[]> = {
   protest: [
-    { id: '1', title: '12.3 비상계엄 시위', desc: '2024년 겨울, 학교 정문에서 1인 피켓 시위를 하며 시민의 양심을 지켰습니다.', icon: '🕯️' },
-    { id: '2', title: '윤석열 탄핵 촉구', desc: '불의를 외면하지 않고 광장에 섰습니다.', icon: '🪧' },
-    { id: '3', title: '고등학교 촛불집회', desc: '행동하는 양심의 시작점', icon: '🔥' }
+    {
+      "id": "1741574164101-0",
+      "title": "12.3 내란 규탄 시위",
+      "desc": "2024년 12월 3일, 헌법 유린과 민주주의 파괴에 맞서 거리로 나갔습니다. 순천대학교 정문에서 1인 피켓 시위를 진행하며, 시민의 양심을 지키고 민주주의를 수호하기 위해 목소리를 높였습니다. 불의에 침묵하지 않는 청년의 기개를 보여준 순간입니다.",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    },
+    {
+      "id": "1741574164101-1",
+      "title": "계엄군 체포 작전 참여",
+      "desc": "비상계엄 선포 직후, 국회로 진입하려는 계엄군을 저지하고 민주주의의 최후 보루인 국회를 지키기 위해 현장에서 함께했습니다. 공권력의 부당한 행사에 맞서 몸을 던져 저항하며, 주권자의 권리를 지켜내고자 했던 치열한 투쟁의 기록입니다.",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    }
   ],
   politics: [
-    { id: '4', title: '국회 인턴 비서관', desc: '국회 인턴비서관 시절, 입법 과정을 체감하며 더 큰 책임감을 배웠습니다.', icon: '🏛️' },
-    { id: '5', title: '이재명 대표 선거 유세', desc: '대선 청년외교특보로서 현장을 누볐습니다.', icon: '🗳️' },
-    { id: '6', title: '지역위원회 활동', desc: '당의 가치를 지역에 뿌리내리는 작업', icon: '🌿' }
+    {
+      "id": "1741574164101-2",
+      "title": "국회 인턴 비서관 시절",
+      "desc": "국회 인턴 비서관으로 근무하며 입법 과정의 실무를 익히고, 국가 정책이 국민의 삶에 미치는 영향을 깊이 체감했습니다. 현장의 목소리를 정책으로 연결하는 법을 배운 소중한 경험입니다.",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    },
+    {
+      "id": "1741574164101-3",
+      "title": "더불어민주당 지역위원회 활동",
+      "desc": "더불어민주당 순천(갑) 대학생위원회 부위원장으로서 지역 당원들과 소통하고, 민주당의 가치를 지역사회에 전파하기 위해 노력했습니다. 풀뿌리 민주주의의 중요성을 깨닫고 정당 정치의 기초를 다진 시간입니다.",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    },
+    {
+      "id": "1741574164101-4",
+      "title": "대선 청년외교특보 활동",
+      "desc": "대선 당시 청년외교특보로 활동하며 청년들의 시각에서 외교 정책을 제안하고, 더 나은 대한민국을 위한 비전을 공유했습니다. 큰 정치를 경험하며 순천의 미래를 설계하는 안목을 넓혔습니다.",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    }
   ],
   citizens: [
-    { id: '7', title: '대학생위원회 소통', desc: '순천(갑) 대학생위원회 부위원장으로서 지역 청년들과 늘 소통하고 있습니다.', icon: '💬' },
-    { id: '8', title: '지역 봉사활동', desc: '시민의 삶 속으로 들어가는 실천', icon: '🤝' },
-    { id: '9', title: '총학생회 정책부장', desc: '학생 사회의 회복과 연대', icon: '🎓' }
+    {
+      "id": "1741574164101-5",
+      "title": "소중한 순간 나누는 기쁨, 봉사활동",
+      "desc": "이웃들과 함께하는 봉사활동을 통해 작은 실천이 큰 변화를 만들어간다고 믿습니다. 사회적 책임을 다하며 더 나은 세상을 위한 발걸음을 계속 내딛고 있습니다. \"세상 한 가운데 사랑이 넘치길\"",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    },
+    {
+      "id": "1741574164101-6",
+      "title": "순천대학교 총학생회 활동",
+      "desc": "순천대학교 총학생회 정책부장으로서 학생들의 권익을 대변하고, 학교와 학생 사이의 가교 역할을 수행했습니다. 청년들의 고민을 현장에서 듣고 해결책을 모색했던 열정적인 시간이었습니다.",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    },
+    {
+      "id": "1741574164101-7",
+      "title": "순천시 청소년 참여위원회 위원장",
+      "desc": "청소년 시절부터 지역사회에 관심을 갖고 청소년 참여위원회 위원장으로 활동하며, 청소년들의 목소리가 시정에 반영될 수 있도록 노력했습니다. 일찍이 시민 사회의 일원으로서 책임을 배운 경험입니다.",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRASP/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    },
+    {
+      "id": "1741574164101-8",
+      "title": "민주평화통일자문회의 활동",
+      "desc": "민주평화통일자문회의 자문위원으로서 평화 통일에 대한 지역사회의 공감대를 형성하고, 청년들의 통일 의식을 높이기 위해 활동했습니다. 국가의 미래와 평화의 가치를 고민하는 소중한 기회였습니다.",
+      "imageUrl": "data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/4gHYSUNDX1BST0ZJTEUAAQEAAAHIAAAAAAQwAABtbnRyUkdCIFhZWiAH4AABAAEAAAAAAABhY3NwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAA9tYAAQAAAADTLQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAlkZXNjAAAA8AAAACRyWFlaAAABFAAAABRnWFlaAAABKAAAABRiWFlaAAABPAAAABR3dHB0AAABUAAAABRyVFJDAAABZAAAAChnVFJDAAABZAAAAChiVFJDAAABZAAAAChjcHJ0AAABjAAAADxtbHVjAAAAAAAAAAEAAAAMZW5VUwAAAAgAAAAcAHMAUgBHAEJYWVogAAAAAAAAb6IAADj1AAADkFhZWiAAAAAAAABimQAAt4UAABjaWFlaIAAAAAAAACSgAAAPhAAAts9YWVogAAAAAAAA9tYAAQAAAADTLXBhcmEAAAAAAAQAAAACZmYAAPKnAAANWQAAE9AAAApbAAAAAAAAAABtbHVjAAAAAAAAAAEAAAAMZW5VUwAAACAAAAAcAEcAbwBvAGcAbABlACAASQBuAGMALgAgADIAMAAxADb/2wBDAAoHBwgHBgoICAgLCgoLDhgQDg0NDh0VFhEYIx8lJCIfIiEmKzcvJik0KSEiMEExNDk7Pj4+JS5ESUM8SDc9Pjv/2wBDAQoLCw4NDhwQEBw7KCIoOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozv/wAARCAJYAlgDASIAAhEBAxEB/8QAHAAAAAcBAQAAAAAAAAAAAAAAAAECAwQFBgcI/8QAUxAAAgEDAwEEBwQGBgYJAgUFAQIDAAQRBRIhMQYTQVFhFCJxgZEyobHBBxUjQlLR8DNi4RYkO0N0U1RjZHNzgpKywvE0"
+    }
   ]
 };
 
@@ -123,7 +243,7 @@ export default function App() {
   const [editingItemId, setEditingItemId] = useState<string | null>(null);
   const [confirmDialog, setConfirmDialog] = useState<{ message: string, onConfirm: () => void } | null>(null);
   
-  const [profileImage, setProfileImage] = useState<string | null>(null);
+  const [profileImage, setProfileImage] = useState<string | null>(DEFAULT_PROFILE_IMAGE);
   const profileInputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -617,9 +737,47 @@ export default function App() {
 
             {adminTab === 'content' && (
               <>
-                <div className="flex items-center gap-2 mb-6">
-                  <Edit3 className="text-blue-700" size={24} />
-                  <h2 className="text-xl font-bold text-gray-900">텍스트 수정</h2>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-2">
+                    <Edit3 className="text-blue-700" size={24} />
+                    <h2 className="text-xl font-bold text-gray-900">텍스트 수정</h2>
+                  </div>
+                  <div className="flex gap-2">
+                    <button 
+                      onClick={() => {
+                        if (window.confirm('모든 수정한 내용을 초기화하고 서버의 기본 설정으로 되돌리시겠습니까?')) {
+                          localStorage.removeItem('portfolio_content');
+                          localStorage.removeItem('portfolio_gallery');
+                          localStorage.removeItem('portfolio_profile_image');
+                          window.location.reload();
+                        }
+                      }}
+                      className="px-3 py-1.5 bg-gray-100 border border-gray-300 text-gray-600 rounded-lg text-xs font-bold hover:bg-gray-200 transition-colors"
+                    >
+                      기본값으로 초기화
+                    </button>
+                    <button 
+                      onClick={() => {
+                        const exportData = {
+                          content,
+                          galleryData,
+                          profileImage
+                        };
+                        const jsonString = JSON.stringify(exportData, null, 2);
+                        const blob = new Blob([jsonString], { type: 'application/json' });
+                        const url = URL.createObjectURL(blob);
+                        const a = document.createElement('a');
+                        a.href = url;
+                        a.download = 'portfolio_data.json';
+                        a.click();
+                        alert('현재 설정 데이터가 portfolio_data.json 파일로 다운로드되었습니다. 이 파일의 내용을 복사해서 저(AI)에게 전달해 주시면 소스 코드에 영구적으로 반영해 드릴 수 있습니다.');
+                      }}
+                      className="flex items-center gap-1.5 px-3 py-1.5 bg-green-600 text-white rounded-lg text-xs font-bold hover:bg-green-700 transition-colors shadow-sm"
+                    >
+                      <Share2 size={14} />
+                      소스 코드 반영용 데이터 추출
+                    </button>
+                  </div>
                 </div>
                 <p className="text-xs text-gray-500 mb-6">포트폴리오 페이지의 주요 문구들을 직접 수정할 수 있습니다. 수정 즉시 반영됩니다.</p>
 
