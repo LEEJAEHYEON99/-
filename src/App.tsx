@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Phone, Mail, Instagram, Facebook, Share2, Lock, ChevronDown, Briefcase, Handshake, Landmark, LogOut, Trash2, MessageSquare, Send, X, Upload, Image as ImageIcon, Edit3 } from 'lucide-react';
-import profileImg from './assets/profile.jpg';
+// import profileImg from './assets/profile.jpg'; // 정적 경로 사용을 위해 주석 처리
 
 const ADMIN_PASSWORD = '87511483';
 const BRAND_BLUE = '#004EA2'; // 더불어민주당 상징색
@@ -137,7 +137,7 @@ const DEFAULT_CONTENT = {
   }
 };
 
-const DEFAULT_PROFILE_IMAGE = profileImg;
+const DEFAULT_PROFILE_IMAGE = '/profile.jpg?v=2';
 
 const STORIES_BG = [
   { bg: 'bg-blue-50', text: 'text-blue-900' },
@@ -818,7 +818,13 @@ export default function App() {
                         <div className="flex items-center gap-4">
                           <div className="w-16 h-16 rounded-full bg-gray-200 border border-gray-300 overflow-hidden flex items-center justify-center text-gray-400 text-xl font-bold">
                             {profileImage ? (
-                              <img src={profileImage} alt="Profile" className="w-full h-full object-cover" />
+                              <img 
+                                src={profileImage} 
+                                alt="Profile" 
+                                className="w-full h-full object-cover" 
+                                referrerPolicy="no-referrer"
+                                onError={() => setProfileImage(null)}
+                              />
                             ) : (
                               content.hero.name.charAt(0)
                             )}
@@ -1152,7 +1158,16 @@ export default function App() {
             
             <div className="w-44 h-44 sm:w-48 sm:h-48 rounded-full bg-white/20 border-4 border-white/30 mb-6 flex items-center justify-center text-6xl font-bold shadow-xl backdrop-blur-sm overflow-hidden">
               {profileImage ? (
-                <img src={profileImage} alt="Profile" className="w-full h-full object-cover object-top" />
+                <img 
+                  src={profileImage} 
+                  alt="Profile" 
+                  className="w-full h-full object-cover object-top" 
+                  referrerPolicy="no-referrer"
+                  onError={() => {
+                    console.error("Profile image load failed, falling back to initial.");
+                    setProfileImage(null);
+                  }}
+                />
               ) : (
                 <span className="text-white drop-shadow-md">{content.hero.name.charAt(0)}</span>
               )}
@@ -1281,7 +1296,13 @@ export default function App() {
                   >
                     <div className="w-28 h-28 rounded-xl bg-gray-100 flex items-center justify-center text-4xl flex-shrink-0 overflow-hidden border border-gray-100">
                       {item.imageUrl ? (
-                        <img src={item.imageUrl} alt={item.title} className="w-full h-full object-cover" />
+                        <img 
+                          src={item.imageUrl} 
+                          alt={item.title} 
+                          className="w-full h-full object-cover" 
+                          referrerPolicy="no-referrer"
+                          loading="lazy"
+                        />
                       ) : (
                         item.icon
                       )}
@@ -1479,7 +1500,12 @@ export default function App() {
                 
                 <div className="w-full bg-gray-100 flex items-center justify-center relative">
                   {selectedGalleryItem.imageUrl ? (
-                    <img src={selectedGalleryItem.imageUrl} alt={selectedGalleryItem.title} className="w-full h-auto max-h-[60vh] object-contain" />
+                    <img 
+                      src={selectedGalleryItem.imageUrl} 
+                      alt={selectedGalleryItem.title} 
+                      className="w-full h-auto max-h-[60vh] object-contain" 
+                      referrerPolicy="no-referrer"
+                    />
                   ) : (
                     <div className="text-7xl py-20">{selectedGalleryItem.icon}</div>
                   )}
