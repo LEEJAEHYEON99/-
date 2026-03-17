@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Phone, Mail, Instagram, Facebook, Share2, Lock, ChevronDown, Briefcase, Handshake, Landmark, LogOut, Trash2, MessageSquare, Send, X, Upload, Image as ImageIcon, Edit3 } from 'lucide-react';
+import { PROFILE_BASE64 } from './assets/profileBase64';
 // import profileImg from './assets/profile.jpg'; // 정적 경로 사용을 위해 주석 처리
 
 const ADMIN_PASSWORD = '87511483';
@@ -137,7 +138,7 @@ const DEFAULT_CONTENT = {
   }
 };
 
-const DEFAULT_PROFILE_IMAGE = '/profile.jpg?v=2';
+const DEFAULT_PROFILE_IMAGE = PROFILE_BASE64;
 
 const STORIES_BG = [
   { bg: 'bg-blue-50', text: 'text-blue-900' },
