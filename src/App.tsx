@@ -64,7 +64,7 @@ const DEFAULT_CONTENT = {
   ],
   profileHighlights: [
     {
-      current: true,
+      current: false,
       title: "더불어민주당 순천(갑) 대학생위원회 부위원장"
     },
     {
